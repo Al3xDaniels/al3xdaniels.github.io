@@ -1,5 +1,5 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: The AXDS Playbook
+description: 
 # theme: just-the-docs
 # remote_theme: just-the-docs/just-the-docs@v0.10.1
 
@@ -14,7 +14,6 @@ plugins:
   - jekyll-default-layout
   - jekyll-remote-theme
 
-# Sidebar structure
 nav:
   - title: "Home"
     url: "/"
@@ -23,3 +22,14 @@ nav:
     children:
       - title: "Basics"
         url: "/docs/monitoring/basics/"
+      - title: "VM Monitoring"
+        url: "/docs/monitoring/vm_monitoring/"
+        children:
+          - title: "Overview"
+            url: "/docs/monitoring/vm_monitoring/vm_monitoring/"
+          - title: "Basics"
+            url: "/docs/monitoring/vm_monitoring/basics/"
+          - title: "Java VM Monitoring"
+            url: "/docs/monitoring/vm_monitoring/java_insights/"
+
+
