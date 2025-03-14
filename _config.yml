@@ -1,11 +1,10 @@
 title: The AXDS Playbook
 description: 
-# theme: just-the-docs
-# remote_theme: just-the-docs/just-the-docs@v0.10.1
 
 remote_theme: just-the-docs/just-the-docs
 
-url: https://al3xdaniels.github.io/
+url: "https://al3xdaniels.github.io/"
+baseurl: ""  # User site, so leave this empty!
 
 aux_links:
   Template Repository: https://github.com/just-the-docs/just-the-docs-template
@@ -14,22 +13,25 @@ plugins:
   - jekyll-default-layout
   - jekyll-remote-theme
 
-nav:
-  - title: "Home"
-    url: "/"
-  - title: "Monitoring"
-    url: "/docs/monitoring/"
-    children:
-      - title: "Basics"
-        url: "/docs/monitoring/basics/"
-      - title: "VM Monitoring"
-        url: "/docs/monitoring/vm_monitoring/"
-        children:
-          - title: "Overview"
-            url: "/docs/monitoring/vm_monitoring/vm_monitoring/"
-          - title: "Basics"
-            url: "/docs/monitoring/vm_monitoring/basics/"
-          - title: "Java VM Monitoring"
-            url: "/docs/monitoring/vm_monitoring/java_insights/"
+just_the_docs:
+  collapse_level: 2  # Keeps the sidebar expanded
+  collections:
+    nav: true  # Ensures sidebar navigation renders properly
 
-
+# nav:
+#   - title: "Home"
+#     url: "/"
+#   - title: "Monitoring"
+#     url: "/docs/monitoring/"
+#     children:
+#       - title: "Basics"
+#         url: "/docs/monitoring/basics/"
+#       - title: "VM Monitoring"
+#         url: "/docs/monitoring/vm_monitoring/"
+#         children:
+#           - title: "Overview"
+#             url: "/docs/monitoring/vm_monitoring/vm_monitoring/"
+#           - title: "Basics"
+#             url: "/docs/monitoring/vm_monitoring/basics/"
+#           - title: "Java VM Monitoring"
+#             url: "/docs/monitoring/vm_monitoring/java_insights/"
